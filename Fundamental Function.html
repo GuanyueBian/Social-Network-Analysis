@@ -1,0 +1,102 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://neo4j-contrib.github.io/developer-resources/language-guides/assets/css/main.css">
+    <title>Social Network Neighbor</title>
+</head>
+
+<body>
+<div id="graph">
+</div>
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <ul class="nav navbar-nav">
+                    <li>
+                 <!--    <form role="search" class="navbar-form" id="search">
+                            <div class="form-group">
+                                基础功能结果
+                            </div>
+                        </form>  -->
+                        <div class="navbar-brand"><a font-color="black">基础功能结果</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-header col-sm-6 col-md-6">
+                <div class="logo-well">
+                    <a href="http://neo4j.com/developer-resources">
+                    <img src="http://neo4j-contrib.github.io/developer-resources/language-guides/assets/img/logo-white.svg" alt="Neo4j World's Leading Graph Database" id="logo">
+                    </a>
+                </div>
+                <div class="navbar-brand">
+                    <div class="brand">Social Network Neighbor</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            
+            <div class="panel-heading">Fundamental Function</div>
+            <table id="results" class="table table-striped table-hover">
+
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>点</td>
+                    <td>边</td>
+                    <td>连通分量</td>
+                    <td>最大分量</td>
+                </tr>
+                <tr>
+                    <td>小数据集</td>
+                    <td>80188</td>
+                    <td>1672855</td>
+                    <td>1777</td>
+                    <td>77337</td>
+                </tr>
+                <tr>
+                    <td>大数据集</td>
+                    <td>361642</td>
+                    <td>19811401</td>
+                    <td>310</td>
+                    <td>360792</td>
+                </tr>
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--
+    <div class="col-md-7">
+        <div class="panel panel-default">
+            <div class="panel-heading" id="title">Details</div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <img src="" class="well" id="poster"/>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <h4>Crew</h4>
+                    <ul id="crew">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+<style type="text/css">
+    .node { stroke: #222; stroke-width: 1.5px; }
+    .node.actor { fill: #888; }
+    .node.movie { fill: #BBB; }
+    .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="neo4j-web.min.js"></script></body>
+
+</body>
+</html>
